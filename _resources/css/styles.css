@@ -1,0 +1,289 @@
+/* used to write the comments */
+/* we will have some common specs regarding few color details which are used across the app
+*/
+:root {
+  --primary-color: #17a2b8;
+  --dark-color: #343a40;
+  --light-color: #f4f4f4;
+  --danger-color: #dc3545;
+  --success-color: #28a745;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* formatting to a tag */
+
+a {
+  color: var(--primary-color);
+}
+
+/* navbar */
+/* will hold all navbar related spec
+whenver we will prefix . to the name : then we will call it as a class */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: solid 1px var(--primary-color);
+  width: 100%;
+  padding: 0.7rem 1rem;
+  top: 0;
+  opacity: 0.9;
+  position: fixed;
+}
+/* wherever we will use the navbar if we have any ul , then it will apply the formatting to the specific ul under the tag where we marked navbar */
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar a {
+  color: #fff;
+  padding: 0.45rem;
+  margin: 0 0.25rem;
+}
+.navbar a:hover {
+  color: var(--primary-color);
+}
+
+/* dark theme */
+.bg-dark {
+  background: var(--dark-color);
+  color: #fff;
+}
+
+/* body styling */
+
+body {
+  font-family: "ABeeZee", sans-serif;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #333;
+}
+
+.landing {
+  position: relative;
+  background: url("../images/showcase.jpg") no-repeat center;
+
+  height: 100vh;
+}
+.landing-inner {
+  color: #fff;
+  height: 100%;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.dark-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.x-large {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+.lead {
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--light-color);
+  color: #333;
+  padding: 0.4rem 1.3rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+.btn-primary {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+/* container */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+}
+.btn-danger,
+.bg-danger,
+.badge-danger,
+.alert-danger {
+  background: var(--danger-color);
+  color: #fff;
+}
+/* to apply the primary text color */
+.text-primary {
+  color: var(--primary-color);
+}
+
+h1 {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+.large {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+/* form related  */
+
+.form .form-group {
+  margin: 1.2rem 0;
+}
+form {
+  display: block;
+  margin-bottom: 1.2rem;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="password"],
+.form input[type="date"],
+.form select,
+.form textarea {
+  display: block;
+  width: 100%;
+  padding: 0.4rem;
+  font-size: 1.2rem;
+  border: 1px solid #ccc;
+}
+.form input[type="submit"],
+button {
+  font: inherit;
+}
+
+.form .social-input {
+  display: flex;
+}
+
+.form .social-input i {
+  padding: 0.5rem;
+  width: 4rem;
+}
+.form input[type="submit"],
+button {
+  font: inherit;
+}
+
+.form .social-input {
+  display: flex;
+}
+
+.form .social-input i {
+  padding: 0.5rem;
+  width: 4rem;
+}
+
+.form .social-input i.fa-twitter {
+  color: #38a1f3;
+}
+.form .social-input i.fa-facebook {
+  color: #3b5998;
+}
+.form .social-input i.fa-instagram {
+  color: #3f729b;
+}
+.form .social-input i.fa-youtube {
+  color: #c4302b;
+}
+.form .social-input i.fa-linkedin {
+  color: #0077b5;
+}
+
+/* profiles */
+
+.profile {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  grid-gap: 2rem;
+  padding: 1rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.btn-light,
+.bg-light,
+.badge-light,
+.alert-light {
+  background: var(--light-color);
+  color: #333;
+}
+
+img {
+  width: 100%;
+}
+.round-img {
+  border-radius: 50%;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: list-item;
+  text-align: match-parent;
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-areas:
+    "top top"
+    "about about"
+    "exp edu"
+    "github github";
+  grid-gap: 1rem;
+}
+
+.my-1 {
+  margin: 1rem 0;
+}
+.profile-top {
+  grid-area: top;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.p-2 {
+  padding: 2rem;
+}
+
+table {
+  display: table;
+  border-collapse: separate;
+  -webkit-border-horizontal-spacing: 2px;
+  -webkit-border-vertical-spacing: 2px;
+  border-top-color: gray;
+  text-indent: initial;
+  box-sizing: border-box;
+}
+.table th {
+  background: var(--light-color);
+}

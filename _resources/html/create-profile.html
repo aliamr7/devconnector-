@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>DevConnector</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.cdnfonts.com/css/abeezee" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/solid.min.css"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/svg-with-js.min.css
+      "
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.css"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="../css/styles.css"
+    />
+    <script src="../js/main.js"></script>
+  </head>
+  <body>
+    <nav class="navbar bg-dark">
+      <a href=""><h1>DevConnector</h1></a>
+      <ul>
+        <li><a href="Profiles.html">Developers</a></li>
+        <li><a href="Register.html">Signup</a></li>
+        <li><a href="Login.html">Login</a></li>
+      </ul>
+    </nav>
+    <section class="container">
+      <h1 class="x-large text-primary">Create Your Profile</h1>
+      <p class="lead">
+        <i class="fa fa-user-circle-o"></i>Let's get some information to make
+        your profile stand out
+      </p>
+      <form class="form">
+        <div class="form-group">
+          <select name="status">
+            <option value="0">* Select Professional Status</option>
+            <option value="Developer">Developer</option>
+            <option value="Junior Developer">Junior Developer</option>
+            <option value="Senior Developer">Senior Developer</option>
+            <option value="Manager">Manager</option>
+            <option value="Student or Learning">Student or Learning</option>
+            <option value="Instructor">Instructor or Teacher</option>
+            <option value="Intern">Intern</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Company" name="company" />
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Location" name="location" />
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="* Skills" name="skills" />
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            placeholder="GithubUserName"
+            name="gitHubUserName"
+          />
+        </div>
+
+        <div class="form-group">
+          <textarea cols="100" rows="3"></textarea>
+        </div>
+
+        <div class="form-group">
+          <input
+            type="button"
+            class="btn btn-light"
+            value="Add Social Network Links"
+          /><span>Optional</span>
+        </div>
+        <div class="form-group social-input">
+          <i class="fab fa-twitter fa-2x"></i>
+          <input type="text" placeholder="Twitter URL" name="twitter" />
+        </div>
+
+        <div class="form-group social-input">
+          <i class="fab fa-facebook fa-2x"></i>
+          <input type="text" placeholder="Facebook URL" name="facebook" />
+        </div>
+
+        <div class="form-group social-input">
+          <i class="fab fa-youtube fa-2x"></i>
+          <input type="text" placeholder="YouTube URL" name="youtube" />
+        </div>
+
+        <div class="form-group social-input">
+          <i class="fab fa-linkedin fa-2x"></i>
+          <input type="text" placeholder="Linkedin URL" name="linkedin" />
+        </div>
+
+        <div class="form-group social-input">
+          <i class="fab fa-instagram fa-2x"></i>
+          <input type="text" placeholder="Instagram URL" name="instagram" />
+        </div>
+
+        <div class="form-group">
+          <input type="submit" class="btn btn-primary" value="Register" />
+        </div>
+      </form>
+    </section>
+  </body>
+</html>

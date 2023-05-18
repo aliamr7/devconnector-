@@ -1,0 +1,13 @@
+{
+  "posts": [
+    {
+      "id": 10,
+      "title": "json-server New",
+      "author": "typicode KH"
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
